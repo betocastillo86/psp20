@@ -58,6 +58,8 @@ public class CalculosMatematicos {
 
         Double total = 0d;
         
+        //System.out.println("Regla simpson x=>"+x+" dof=>"+dof+" segmentos=>"+segmentos);
+        
         for (int i = 0; i <= segmentos; i++) {
             
             int multiplicador;
@@ -73,6 +75,9 @@ public class CalculosMatematicos {
             Double xi = w * i;
             //Calcula la distribución T con el Xi
             Double fxi = DistribucionT(dof, xi);
+            
+            //System.out.println("X"+i +" -> "+xi);
+            //System.out.println("FX"+i +" -> "+fxi);
             
             //Realiza la sumatoria
             Double subtotal = (w/3) * multiplicador * fxi;

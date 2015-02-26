@@ -20,6 +20,9 @@
       <artifactId>jetty-servlet</artifactId>
       <version>7.6.0.v20120127</version>
     </dependency>
+    
+    
+    
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
@@ -46,6 +49,17 @@
           </execution>
         </executions>
       </plugin>
+      
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.10.1</version>
+        <configuration>
+          <show>private</show>
+          <nohelp>true</nohelp>
+        </configuration>
+     </plugin>
     </plugins>
   </build>
 </project>

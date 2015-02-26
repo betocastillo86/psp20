@@ -27,8 +27,8 @@ public class CalculosConListas {
     
     /****
      * Realiza la sumatoria de una lista al cuadrado y le saca el promedio
-     * @param lista
-     * @return 
+     * @param lista lista de numeros a calcular
+     * @return primedio total al cuadrado
      */
     public static double CalcularPromedioAlCuadrado(LinkedList<Double> lista)
     {
@@ -36,6 +36,11 @@ public class CalculosConListas {
         return total / lista.size();
     }
     
+    /****
+     * Calcula la desviacion estandar de un grupo de numeros
+     * @param lista grupo de numeros a calcular
+     * @return calculo final de la desviación estandar
+     */
     public static double CalcularDesviacionEstandar(LinkedList<Double> lista)
     {
         double promedio = CalcularPromedio(lista);
@@ -53,7 +58,7 @@ public class CalculosConListas {
     }
     
     /**
-     * Realiza la sumatoria del contenido de una lista de numeros     * 
+     * Realiza la sumatoria del contenido de una lista de numeros      
      * @param lista de numeros
      * @return sumatoria
      */

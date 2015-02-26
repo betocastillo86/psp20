@@ -93,8 +93,8 @@ public class MetodoPROBE {
     
     /****
      * Realiza el calculo de la regresión guardando los datos en B1 y B0
-     * @param lista1
-     * @param lista2 
+     * @param lista1 lista inicial 
+     * @param lista2 lista complementaria
      */
     private void CalcularRegresion(LinkedList<Double> lista1, LinkedList<Double> lista2)
     {
@@ -111,8 +111,8 @@ public class MetodoPROBE {
     
     /*****
      * Calcula la correlacion y la asigna a la propiedad Rxy y R2
-     * @param lista1
-     * @param lista2 
+     * @param lista1 lista inicial
+     * @param lista2 lista complementaria
      */
     private void CalcularCorrelacion(LinkedList<Double> lista1, LinkedList<Double> lista2)
     {
@@ -149,8 +149,8 @@ public class MetodoPROBE {
     
     /***
      * Calcula los tamaños con base en un objeto resumen programa y devielve los tamaños
-     * @param programa
-     * @return 
+     * @param programa datos de los tamaños de los programas
+     * @return Rangos de tamaños del programa dado
      */
     public RangoTamano CalcularTamanos(ResumenPrograma programa)
     {
@@ -165,8 +165,8 @@ public class MetodoPROBE {
     
     /***
      * Calcula los rangos de tamaños según la lista dada y con las formulas de psp11
-     * @param listaClases
-     * @return 
+     * @param listaClases listado de los numeros que se desean calcular
+     * @return Rangos de tamaños de acuerdo a los datos ingresados
      */
     public RangoTamano CalcularTamanos(LinkedList<Double> listaClases)
     {
@@ -185,9 +185,9 @@ public class MetodoPROBE {
     
     /****
      * Calcula la integracion numercia de acuerdo al ejercicio PSP2.0
-     * @param x
-     * @param dof
-     * @return 
+     * @param x valor de la funcion que se desea calcular
+     * @param dof Degrees of freedom
+     * @return El número calculado de lla INtegracion Numerica
      */
     public Double CalcularIntegracionNumerica(Double x, Double dof)
     {
